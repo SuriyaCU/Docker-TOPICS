@@ -94,8 +94,7 @@ Final Image (runtime only)
 ---
 
 ## What is a Distroless Image?
-
-> **Distroless images contain only the application and its runtime — no shell, no package manager, no OS utilities.**
+ **Distroless images contain only the application and its runtime — no shell, no package manager, no OS utilities.**
 
 ---
 
@@ -124,14 +123,14 @@ HAS Only runtime libraries
 
 | Feature         | Alpine | Distroless |
 | --------------- | ------ | ---------- |
-| Shell           | Yes    | ❌ No       |
-| Package manager | Yes    | ❌ No       |
+| Shell           | Yes    |  No       |
+| Package manager | Yes    |  No       |
 | Size            | Small  | Smaller    |
 | Debugging       | Easy   | Hard       |
 | Security        | Good   | Excellent  |
 
-📌 **Alpine → dev/testing**
-📌 **Distroless → production**
+ **Alpine → dev/testing**
+ **Distroless → production**
 
 ---
 
@@ -163,12 +162,11 @@ CMD ["app.jar"]
 
 ## How do you debug Distroless images?
 
-### ❗ Important Interview Question
 
-❌ You cannot exec into container:
+ You cannot exec into container:
 
 ```bash
-docker exec -it container bash  # ❌ fails
+docker exec -it container bash  #  fails
 ```
 
 ### Debug Options
