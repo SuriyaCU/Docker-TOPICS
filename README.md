@@ -64,9 +64,9 @@ COPY --from=builder /app/node_modules ./node_modules
 CMD ["node", "dist/app.js"]
 ```
 
-✔ Build tools removed
-✔ Smaller image
-✔ Faster startup
+ Build tools removed
+ Smaller image
+ Faster startup
 
 ---
 
@@ -154,9 +154,9 @@ COPY --from=build /app/target/app.jar app.jar
 CMD ["app.jar"]
 ```
 
-✔ No shell
-✔ No Maven
-✔ Only JVM + app
+ No shell
+ No Maven
+ Only JVM + app
 
 ---
 
